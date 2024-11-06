@@ -1,0 +1,118 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Cyberpunk Colors */
+body {
+    background-color: #0D0D0D;
+    color: #E0FFFF;
+}
+.banner {
+    background: linear-gradient(135deg, #ff005a, #6c3f99);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+.banner h1 {
+    font-size: 3em;
+}
+.banner p {
+    font-size: 1.2em;
+}
+.shop-now {
+    background-color: #ff005a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s;
+}
+.shop-now:hover {
+    background-color: #6c3f99;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+.product-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff005a;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.product-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.product-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.product-card h3 {
+    font-size: 1.5em;
+    color: #E0FFFF;
+}
+.product-card p {
+    color: #999;
+    margin: 10px 0;
+}
+.buy-now {
+    background-color: #ff005a;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.buy-now:hover {
+    background-color: #6c3f99;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #E0FFFF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2.2em;
+    }
+    .product-section h2 {
+        font-size: 2em;
+    }
+    .product-card h3 {
+        font-size: 1.3em;
+    }
+}
+@media (max-width: 480px) {
+    .banner h1 {
+        font-size: 1.8em;
+    }
+    .product-section h2 {
+        font-size: 1.8em;
+    }
+    .product-card h3 {
+        font-size: 1.2em;
+    }
+}
