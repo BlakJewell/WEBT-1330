@@ -3,40 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cyberpunk Weapons Store</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-     <!-- Main Content -->
-     <main>
-        <!-- Product Section -->
+    <header>
+        <div class="banner">
+            <h1>CYBERPUNK WEAPONRY</h1>
+            <p>Gear up with the most advanced weapons of the future</p>
+            <button class="shop-now">Shop Now</button>
+        </div>
+    </header>
+
+    <main>
         <section class="product-section">
-            <h2>Featured Guns</h2>
+            <h2>Featured Weapons</h2>
+            <div class="filter-buttons">
+                <button data-filter="all" class="filter-btn active">All</button>
+                <button data-filter="assault-rifles" class="filter-btn">Assault Rifles</button>
+                <button data-filter="machine-guns" class="filter-btn">Machine Guns</button>
+                <button data-filter="shotguns" class="filter-btn">Shotguns</button>
+                <button data-filter="sniper-rifles" class="filter-btn">Sniper Rifles</button>
+                <button data-filter="pistols-revolvers" class="filter-btn">Pistols / Revolvers</button>
+                <button data-filter="melee-weapons" class="filter-btn">Melee Weapons</button>
+            </div>
             <div class="product-grid">
-                <!-- Product Card 1 -->
-                <div class="product-card">
-                    <img src="images/gun1.jpg" alt="Gun 1">
-                    <h3>Cyber Blaster</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <!-- Assault Rifles -->
+                <div class="product-card" data-category="assault-rifles">
+                    <h3>DS Copperhead</h3>
+                    <p>Advanced assault rifle.</p>
                     <button class="buy-now">Buy Now</button>
                 </div>
-                <!-- Product Card 2 -->
-                <div class="product-card">
-                    <img src="images/gun2.jpg" alt="Gun 2">
-                    <h3>Neon Fury</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="product-card" data-category="assault-rifles">
+                    <h3>3DS Sidewinder</h3>
+                    <p>Perfect for close-quarters combat.</p>
                     <button class="buy-now">Buy Now</button>
                 </div>
-                <!-- Product Card 3 -->
-                <div class="product-card">
-                    <img src="images/gun3.jpg" alt="Gun 3">
-                    <h3>Phantom Striker</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <!-- Add more assault rifles here -->
+
+                <!-- Machine Guns -->
+                <div class="product-card" data-category="machine-guns">
+                    <h3>DS1 Pulsar</h3>
+                    <p>High-damage machine gun.</p>
                     <button class="buy-now">Buy Now</button>
                 </div>
+                <div class="product-card" data-category="machine-guns">
+                    <h3>G-58 Dian</h3>
+                    <p>Precision and power combined.</p>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                <!-- Add more machine guns here -->
+
+                <!-- Shotguns -->
+                <div class="product-card" data-category="shotguns">
+                    <h3>Carnage</h3>
+                    <p>Close-range destructive power.</p>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                <div class="product-card" data-category="shotguns">
+                    <h3>DB-2 Satara</h3>
+                    <p>Reliable shotgun with a high rate of fire.</p>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                <!-- Add more shotguns here -->
+
+                <!-- Sniper Rifles -->
+                <div class="product-card" data-category="sniper-rifles">
+                    <h3>Ashura</h3>
+                    <p>Silent, high-impact sniper rifle.</p>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                <div class="product-card" data-category="sniper-rifles">
+                    <h3>M-179 Achilles</h3>
+                    <p>Ultimate precision from afar.</p>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                <!-- Add more sniper rifles here -->
+
+                <!-- Pistols / Revolvers -->
+                <div class="product-card" data-category="pistols-revolvers">
+                    <h3>A-22B Chao</h3>
+                    <p>Quick draw, high damage pistol.</p>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                <div class="product-card" data-category="pistols-revolvers">
+                    <h3>DR12 Quasar</h3>
+                    <p>Futuristic revolver for the bold.</p>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                <!-- Add more pistols/revolvers here -->
+
+                <!-- Melee Weapons -->
+                <div class="product-card" data-category="melee-weapons">
+                    <h3>Black Unicorn</h3>
+                    <p>Blade with a deadly edge.</p>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                <div class="product-card" data-category="melee-weapons">
+                    <h3>Katana</h3>
+                    <p>A classic, refined weapon for cyberpunks.</p>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                <!-- Add more melee weapons here -->
             </div>
         </section>
     </main>
+
+    <footer>
+        <p>© Cyberpunk Weaponry. All rights reserved.</p>
+    </footer>
 </body>
 </html>
