@@ -156,3 +156,49 @@ footer {
         font-size: 1.2em;
     }
 }
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2.5em;
+    }
+    .banner p {
+        font-size: 1em;
+    }
+    .product-section h2 {
+        font-size: 2em;
+    }
+    .product-card h3 {
+        font-size: 1.3em;
+    }
+    .product-card p {
+        font-size: 0.8em;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .banner h1 {
+        font-size: 2em;
+    }
+    .banner p {
+        font-size: 0.9em;
+    }
+    .shop-now {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+    .product-section {
+        padding: 20px 10px;
+    }
+    .product-section h2 {
+        font-size: 1.8em;
+    }
+    .product-card h3 {
+        font-size: 1.2em;
+    }
+    .product-card p {
+        font-size: 0.8em;
+    }
+}
