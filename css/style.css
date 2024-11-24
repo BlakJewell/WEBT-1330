@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Hubot Sans', sans-serif;
 }
 
 /* Colors and Body */
@@ -201,4 +201,5 @@ footer {
     .product-card p {
         font-size: 0.8em;
     }
+    
 }

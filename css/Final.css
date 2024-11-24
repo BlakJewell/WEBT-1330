@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hubot Sans', sans-serif;
+}
+.product-description {
+    border: 2px solid #ff005a; /* Border color matching the theme */
+    padding: 15px; /* Add some padding inside the border */
+    border-radius: 8px; /* Rounded corners for a smoother look */
+    background-color: #383233; /* Optional: A subtle background color */
+    box-shadow: 0 4px 15px rgba(207, 39, 39, 0.5); /* Shadow for depth */
+}
+
+/* Colors and Body */
+body {
+    background-color: #0D0D0D;
+    color: #E0FFFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(135deg, #ff005a, #6c3f99);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 4px solid #ff005a;
+}
+.banner h1 {
+    font-size: 3em;
+    text-shadow: 0 0 10px #ff005a, 0 0 20px #6c3f99;
+}
+.banner p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-shadow: 0 0 5px #6c3f99;
+}
+.shop-now {
+    margin-top: 20px;
+    background-color: #ff005a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 0 10px #ff005a;
+    text-decoration: none;
+}
+.shop-now:hover {
+    background-color: #6c3f99;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #6c3f99;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.slider {
+    flex: 1;
+}
+
+.slider-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+}
+.slider-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Product Description */
+.product-description {
+    flex: 1;
+    max-width: 400px;
+    color: #fff;
+}
+.product-description h1 {
+    font-size: 2em;
+    color: #ff005a;
+}
+.product-description h2 {
+    font-size: 1.5em;
+    color: #E0FFFF;
+    margin: 10px 0;
+}
+.product-description p {
+    font-size: 1em;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2.5em;
+    }
+    .product-description h1 {
+        font-size: 1.8em;
+    }
+    .product-description h2 {
+        font-size: 1.4em;
+    }
+}
+@media (max-width: 480px) {
+    .banner h1 {
+        font-size: 2em;
+    }
+    .product-description h1 {
+        font-size: 1.6em;
+    }
+    .product-description h2 {
+        font-size: 1.2em;
+    }
+}
